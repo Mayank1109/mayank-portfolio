@@ -20,8 +20,8 @@ export default function Footer() {
           </p>
         </div>
         <div className="foot-links">
-          <a href="mailto:you@example.com">✉ &nbsp;maycha1109@example.com</a>
-          <a href="tel:+911234567890">☎ &nbsp;+91 8446496551</a>
+          <a href="mailto:maycha1109@gmail.com">✉ &nbsp;maycha1109@gmail.com</a>
+          <a href="tel:+918446496551">☎ &nbsp;+91 8446496551</a>
           <a
             href="https://github.com/Mayank1109/"
             target="_blank"
@@ -37,7 +37,7 @@ export default function Footer() {
             in&nbsp;&nbsp;https://www.linkedin.com/in/maycha1109/
           </a>
         </div>
-        <a href="mailto:you@example.com" className="btn">
+        <a href="mailto:maycha1109@gmail.com" className="btn">
           SEND ME A MESSAGE →
         </a>
       </div>
@@ -45,10 +45,6 @@ export default function Footer() {
         <div>MAYANK.IO</div>
         <div>
           © {new Date().getFullYear()} MAYANK CHAUHAN — ALL RIGHTS RESERVED.
-        </div>
-        <div className="flinks">
-          <a href="#">PRIVACY POLICY</a>
-          <a href="#">TERMS &amp; CONDITIONS</a>
         </div>
       </div>
     </footer>
