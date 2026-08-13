@@ -79,18 +79,6 @@ public/images/
 docs/screenshots/                                # Drop README screenshots here
 ```
 
-## Editing content
-
-Everything is data-driven from small arrays/objects at the top of each component (`PROJECTS`, `SKILL_GROUPS`, `STATS`, `NAV_LINKS`, `EXPERIENCE`, `EDUCATION`) — edit those rather than the JSX to add or change entries.
-
-## Things to fill in before you ship this
-
-- **`components/Footer.tsx`** — real email, phone, GitHub, and LinkedIn links
-- **`components/ExperienceEducation.tsx`** — your actual B.Tech years and university name, and double check the TCS start date
-- **`app/layout.tsx`** — update the `metadata` description for SEO/social previews
-- **Live demo URL** and **screenshots** — see sections above
-- **Open Graph image** — for clean link previews when this URL is shared
-
 ## Deploying
 
 Standard Next.js app, deploys as-is to Vercel:
