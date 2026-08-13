@@ -4,15 +4,15 @@ A dark, black-hole-themed developer portfolio built with Next.js 14 (App Router)
 
 ## Live demo
 
-**[your-domain.vercel.app](https://your-domain.vercel.app)** — replace with your actual deployment URL once you've shipped it ([see Deploying](#deploying)).
+**[your-domain.vercel.app](https://mayank-portfolio-eosin.vercel.app/)** — replace with your actual deployment URL once you've shipped it ([see Deploying](#deploying)).
 
 ## Screenshots
 
 > Drop real screenshots into `docs/screenshots/` and update the paths below. Recommended: full-page hero, a project card close-up, and one showing the experience/education section.
 
-| Hero                                       | Projects                                           |
-| ------------------------------------------ | -------------------------------------------------- |
-| ![Hero section](docs/screenshots/hero.png) | ![Projects section](docs/screenshots/projects.png) |
+| Hero                                    | Projects                                        |
+| --------------------------------------- | ----------------------------------------------- |
+| ![Hero section](./screenshots/hero.jpg) | ![Projects section](./screenshots/projects.jpg) |
 
 ## Overview
 
