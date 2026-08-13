@@ -22,24 +22,27 @@ export default function Header() {
   });
 
   useEffect(() => {
-    const sections = NAV_LINKS.map((l) => document.querySelector(l.href));
+    const sections = NAV_LINKS.map((l) =>
+      document.querySelector(l.href),
+    ).filter((el): el is HTMLElement => el !== null);
 
-    const onScroll = () => {
-      let current = "#home";
-      sections.forEach((section, i) => {
-        if (
-          section &&
-          window.scrollY >= (section as HTMLElement).offsetTop - 140
-        ) {
-          current = NAV_LINKS[i].href;
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+        if (visible.length > 0) {
+          setActive("#" + visible[0].target.id);
         }
-      });
-      setActive(current);
-    };
+      },
+      { rootMargin: "-140px 0px -60% 0px" },
+    );
 
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-    return () => window.removeEventListener("scroll", onScroll);
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
