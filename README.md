@@ -8,8 +8,6 @@ A dark, black-hole-themed developer portfolio built with Next.js 14 (App Router)
 
 ## Screenshots
 
-> Drop real screenshots into `docs/screenshots/` and update the paths below. Recommended: full-page hero, a project card close-up, and one showing the experience/education section.
-
 ![Hero section](./screenshots/hero.jpg)
 ![Projects section](./screenshots/projects.jpg)
 ![Details sections](./screenshots//ExpEduContact.jpg)
